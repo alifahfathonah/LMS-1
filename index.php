@@ -1,6 +1,6 @@
 <?php
 include "db.php";
-include "layout/header.php";
+include "  layout/header.php";
 $data = mysqli_query($conn, "SELECT * FROM groups ");
 $output = mysqli_fetch_all($data,MYSQLI_ASSOC);
 ?>
@@ -36,10 +36,10 @@ footer {
         <a class="nav-link  ml-3" href="#">Contact Us</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link ml-3" href="Student/login.php">Students Login</a>
+        <a class="nav-link ml-3" href="student/login.php">Students Login</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link ml-3" href="Instructor/login.php">Instructors Login</a>
+        <a class="nav-link ml-3" href="instructor/login.php">Instructors Login</a>
       </li>
     
       </li><li class="nav-item">
