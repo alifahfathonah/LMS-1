@@ -101,7 +101,7 @@
 </li> -->
 <!-- Nav Item - Stocks -->
 <li class="nav-item">
-    <a class="nav-link" style="cursor:pointer" href='workbooks.php'>
+    <a class="nav-link" style="cursor:pointer" href='../workbook_template.php?lesson=1.1'>
         <i class="fas fa-fw fa-paste"></i>
         <span>Workbooks</span></a>
      
