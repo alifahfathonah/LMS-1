@@ -5,7 +5,7 @@ include "layout/header.php";
 $email=$_SESSION['email'];
 $data2 = mysqli_query($conn, "SELECT * FROM instructor where email='$email'");
 $output2 = mysqli_fetch_assoc($data2); $iid=$output2['id'];
-$data = mysqli_query($conn, "SELECT * FROM workbook where iid='$iid'");
+$data = mysqli_query($conn, "SELECT * FROM assign_students where iid='$iid'");
 $output = mysqli_fetch_all($data,MYSQLI_ASSOC);
 if(!$output2)
 {
@@ -59,29 +59,22 @@ if(isset($_POST['add']))
             <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
                 <thead>
                     <tr class='bg-light '>
-                    <th> Title</th>
-                        <th>Status</th>
-                        <th>View</th>
-                        <th>Action</th>
+                         <th> Title</th>
+                        
+                        <th>View Workbook</th>
                     </tr>
                 </thead>
               
                 <tbody>
                     <?php foreach($output as $out) {?>
                     <tr>
-                        <td><?php echo $out['title']?></td>
-                        <td><?php echo $out['status']?></td>
-                        <td>  <a class="btn btn-info btn-circle"  href='workbook_ch.php?wid=<?php echo $out['id']?>'>
+                        <td><?php $sid=$out['sid']; $data3 = mysqli_query($conn, "SELECT * FROM student where id='$sid'");
+                            $output3 = mysqli_fetch_assoc($data3); echo $output3['name'];?></td>
+                      
+                        <td>  <a class="btn btn-info btn-circle"  href='workbook_template.php?lesson=1.1&sid=<?php echo $out['sid']?>'>
                                  <i class="fas fa-eye"></i>  </a> </td>
                      
-                        <td> 
-                             <a class="btn btn-warning btn-circle"  onclick="GetEModal('<?php echo $out['id']?>','<?php echo $out['title']?>','<?php echo $out['chapter']?>',
-                            '<?php echo $out['status']?>')" data-toggle="modal" data-target="#editModal">
-                                        <i class="fas fa-edit"></i>
-                          </a> 
-                          <a href=""  class="btn btn-danger btn-circle" data-toggle="modal" data-target="#delModal">
-                                        <i class="fas fa-trash"></i>
-                          </a></td>
+                       
                     
                      <!-- Delete Confirmation Modal-->
  <div class="modal fade" id="delModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
