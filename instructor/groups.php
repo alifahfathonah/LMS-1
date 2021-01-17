@@ -12,7 +12,6 @@ if(!$output2)
 
 $data = mysqli_query($conn, "SELECT * FROM groupss  where iid='$iid'");
 $output = mysqli_fetch_all($data,MYSQLI_ASSOC);
-print_r($output);
 $data3 = mysqli_query($conn, "SELECT * FROM assign_students WHERE iid='$iid'");
 $output3 = mysqli_fetch_all($data3,MYSQLI_ASSOC);
 //Add new group Form Submit
