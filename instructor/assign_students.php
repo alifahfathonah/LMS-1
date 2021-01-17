@@ -151,7 +151,7 @@ if(isset($_POST['add']))
                      
                              <label for="">Select Group:</label>
                          <select name="gid" id="" class="  form-control form-control-user">
-                         <?php foreach($output as $out){  $gid=$out['gid'];$sql4=mysqli_query($conn, "SELECT * FROM groups where id='$gid' and iid='$iid'");
+                         <?php foreach($output as $out){  $gid=$out['gid'];$sql4=mysqli_query($conn, "SELECT * FROM groupss where id='$gid' and iid='$iid'");
                         $result4 = mysqli_fetch_assoc($sql4); 
                         if($result4) { ?>
                              <option value="<?php echo $result4['id']?> "><?php echo $result4['name']?> </option>
