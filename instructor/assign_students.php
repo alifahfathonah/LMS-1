@@ -88,7 +88,7 @@ if(isset($_POST['add']))
               
                 <tbody>
                     <?php foreach($output as $out) {?>
-                    <tr><?php $gid=$out['gid']; $sql1 = mysqli_query($conn, "SELECT * FROM groups where id='$gid' and iid='$iid'");
+                    <tr><?php $gid=$out['gid']; $sql1 = mysqli_query($conn, "SELECT * FROM groupss where id='$gid' and iid='$iid'");
                         $result1 = mysqli_fetch_assoc($sql1); 
                         if($result1) { ?>
                         <td> <?php echo $result1['name'] ?></td>
@@ -151,11 +151,11 @@ if(isset($_POST['add']))
                      
                              <label for="">Select Group:</label>
                          <select name="gid" id="" class="  form-control form-control-user">
-                         <?php foreach($output as $out){  $gid=$out['gid'];$sql4=mysqli_query($conn, "SELECT * FROM groupss where id='$gid' and iid='$iid'");
-                        $result4 = mysqli_fetch_assoc($sql4); 
-                        if($result4) { ?>
-                             <option value="<?php echo $result4['id']?> "><?php echo $result4['name']?> </option>
-                        <?php } } ?>
+                         <?php $sql4=mysqli_query($conn, "SELECT * FROM groupss where iid='$iid'");
+                        $result4 = mysqli_fetch_all($sql4,MYSQLI_ASSOC); 
+                             foreach($result4 as $res4){ ?>
+                             <option value="<?php echo $res4['id']?> "><?php echo $res4['name']?> </option>
+                        <?php }  ?>
                             </select>  <br>
                             <div class="card-body">
         <div class="table-responsive">
