@@ -10,7 +10,7 @@ if(!$output2)
     echo "<script> alert('Error! You need to login first)');window.location.href='login.php' </script>";
 }
 
-$data = mysqli_query($conn, "SELECT * FROM groupes  where iid='$iid'");
+$data = mysqli_query($conn, "SELECT * FROM groupss  where iid='$iid'");
 $output = mysqli_fetch_all($data,MYSQLI_ASSOC);
 print_r($output);
 $data3 = mysqli_query($conn, "SELECT * FROM assign_students WHERE iid='$iid'");
@@ -20,7 +20,7 @@ if(isset($_POST['add']))
   {  
      $name =  $_POST['name'];
     $status= $_POST['status'];
-    $insert = mysqli_query($conn,"INSERT INTO `groups`(`name`, `iid`,`status`)
+    $insert = mysqli_query($conn,"INSERT INTO `groupss`(`name`, `iid`,`status`)
     VALUES('$name','$iid','$status')");
      if($insert){
         echo "<script> alert('Group is Added Successfully!');window.location.href='groups.php' </script>";
@@ -50,7 +50,7 @@ if(isset($_POST['assign']))
   if(isset($_POST['del']))
  {
     $id = $_POST['id'];
-    $sql = "DELETE FROM groups WHERE id='$id'";
+    $sql = "DELETE FROM groupss WHERE id='$id'";
     $del=mysqli_query($conn, $sql);
         if($del){
             echo "<script> alert('Group is Deleted Successfully!');window.location.href='groups.php' </script>";
@@ -61,7 +61,7 @@ if(isset($_POST['assign']))
  { $id =  $_POST['id'];
     $name =  $_POST['name'];
     $status= $_POST['status'];
-    $sql = "UPDATE `groups` SET `name`='$name',`status`='$status'   WHERE id='$id'";
+    $sql = "UPDATE `groupss` SET `name`='$name',`status`='$status'   WHERE id='$id'";
     $del=mysqli_query($conn, $sql);
         if($del){
             echo "<script> alert('Group Details is Updated Successfully!');window.location.href='groups.php' </script>";
