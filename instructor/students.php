@@ -34,7 +34,7 @@ if(isset($_POST['add']))
   if(isset($_POST['del']))
  {
     $id = $_POST['id'];
-    $sql = "DELETE FROM student WHERE id='$id'";
+    $sql = "DELETE FROM assign_students WHERE id='$id'";
     $del=mysqli_query($conn, $sql);
         if($del){
             echo "<script> alert('student is Deleted Successfully!');window.location.href='students.php' </script>";
@@ -130,12 +130,23 @@ if(isset($_POST['assign']))
                              ,'<?php echo $final['address']?>','<?php echo $final['gender']?>','<?php echo $final['status']?>')" data-toggle="modal" data-target="#editModal">
                                         <i class="fas fa-edit"></i>
                           </a> 
-                          <a href=""  class="btn btn-danger btn-circle" data-toggle="modal" data-target="#delModal">
+                          <a href=""  class="btn btn-danger btn-circle"onclick="GetdelModal('<?php echo $out3['id']?>')" data-toggle="modal" data-target="#delModal">
                                         <i class="fas fa-trash"></i>
                           </a></td>
+ 
+    </tr><?php }?>
+                   
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+</div>
+</div>
+<!-- /.container-fluid end-->
                     
                      <!-- Delete Confirmation Modal-->
- <div class="modal fade" id="delModal" tabindex="-1" address="dialog" aria-labelledby="exampleModalLabel"
+                     <div class="modal fade" id="delModal" tabindex="-1" address="dialog" aria-labelledby="exampleModalLabel"
         aria-hidden="true">
         <div class="modal-dialog" address="document">
             <div class="modal-content">
@@ -152,25 +163,14 @@ if(isset($_POST['assign']))
                 </div>
                 <div class="modal-footer">
                     <form action="" method="post">
-                        <input type="hidden" name="id" value="<?php echo $out['id']?>">
+                        <input type="hidden" name="id" id='sid' >
                     <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
                     <input type="submit" name="del" class="btn btn-danger" value="Yes, Delete">
                     </form>
                 </div>
             </div>
         </div>
-    </div> <?php }?>
-    </tr>
-                   
-                </tbody>
-            </table>
-        </div>
-    </div>
-</div>
-</div>
-</div>
-<!-- /.container-fluid end-->
- 
+    </div> 
      <!-- Assign Lisence  Modal-->
  <div class="modal fade" id="assignModal" tabindex="-1" address="dialog" aria-labelledby="exampleModalLabel"
         aria-hidden="true">
@@ -317,7 +317,9 @@ function makekey() {
     document.getElementById("lkey").value=text ;
  
 }
-
+ function GetdelModal(sid){
+    document.getElementById("sid").value=sid ;
+ }
 function GetEModal(aid,name,email,pass,address,gender,status) {
     document.getElementById("aid").value=aid ;
     document.getElementById("name").value =name;
