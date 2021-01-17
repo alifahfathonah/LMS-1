@@ -10,8 +10,9 @@ if(!$output2)
     echo "<script> alert('Error! You need to login first)');window.location.href='login.php' </script>";
 }
 
-$data = mysqli_query($conn, "SELECT * FROM groups  ");
+$data = mysqli_query($conn, "SELECT * FROM groups  where iid='$iid'");
 $output = mysqli_fetch_all($data,MYSQLI_ASSOC);
+print_r($output);
 $data3 = mysqli_query($conn, "SELECT * FROM assign_students WHERE iid='$iid'");
 $output3 = mysqli_fetch_all($data3,MYSQLI_ASSOC);
 //Add new group Form Submit
@@ -90,7 +91,7 @@ if(isset($_POST['assign']))
 <p class="mb-4">Here is All the Group that have purchased lisence You can  Assign groups to<a 
         href="Groups.php"> Groups</a>. Or assign a groups to <a   href="Groups.php">Student </a></p>
         
-<button class='btn btn-success mr-2'  data-toggle="modal" data-target="#AddempModal">Add New Group</button> ><br><br>
+<button class='btn btn-success mr-2'  data-toggle="modal" data-target="#AddempModal">Add New Group</button> <br><br>
 <!-- DataTales Example -->
 <div class="card shadow mb-4">
     <div class="card-header py-3">
