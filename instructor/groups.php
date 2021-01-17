@@ -10,7 +10,7 @@ if(!$output2)
     echo "<script> alert('Error! You need to login first)');window.location.href='login.php' </script>";
 }
 
-$data = mysqli_query($conn, "SELECT * FROM groups WHERE iid='$iid'");
+$data = mysqli_query($conn, "SELECT * FROM groups  ");
 $output = mysqli_fetch_all($data,MYSQLI_ASSOC);
 $data3 = mysqli_query($conn, "SELECT * FROM assign_students WHERE iid='$iid'");
 $output3 = mysqli_fetch_all($data3,MYSQLI_ASSOC);
