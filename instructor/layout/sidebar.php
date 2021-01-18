@@ -7,7 +7,6 @@
     <div class="sidebar-brand-icon ">
           <img src="../img/logo.png" style="width:150px" alt="">
     </div>
-    <div class="sidebar-brand-text mx-3">LMS</div>
 </a>
 
 <!-- Divider -->
