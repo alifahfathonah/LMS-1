@@ -2,11 +2,10 @@
    <ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion" id="accordionSidebar">
 
 <!-- Sidebar - Brand -->
-<a class="sidebar-brand d-flex align-items-center justify-content-center" href="index.html">
-    <div class="sidebar-brand-icon rotate-n-15">
-        <i class="fas fa-chalkboard-teacher"></i>
+<a class="sidebar-brand d-flex align-items-center justify-content-center" href="dashboard.php">
+    <div class="sidebar-brand-icon ">
+      <img src="../img/logo.png" width='50' alt="">
     </div>
-    <div class="sidebar-brand-text mx-3">LMS</div>
 </a>
 
 <!-- Divider -->
