@@ -28,7 +28,7 @@ footer {
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
     <ul class="navbar-nav mr-auto">
       <li class="nav-item">
-        <a class="nav-link ml-5" href="stripe_payment_gateway_php/index.php">Workbooks</a>
+        <a class="nav-link ml-5" href="stripe_payment_getway_php/index.php?valid=30">Workbooks</a>
       </li>
       <li class="nav-item">
         <a class="nav-link  ml-3" href="#">About Us</a>
