@@ -296,7 +296,7 @@ width:40px; height:40px; margin:0px 0px 5px 80px;}
     <div class="container  bg-white " >
         <!-- WorkBook Section -->
         <section>
-              <a href="student/dashboard.php" class="btn btn-info d-block" style="position:absolute; margin-top:2rem;margin-left:-13rem">&lt; Back to Dashboard</a>
+              <a href="student/dashboard.php" class="btn btn-info d-block" style="position:fixed; margin-top:2rem; margin-bottom:-4rem; margin-left:-12rem">&lt; Back to Dashboard</a>
           <div class="header" style="position: fixed;">
             <!-- <div id="triangle-up"> <h2 style="margin-left:-60rem" class="text-white hd1 pt-2">Lesson 1.1</h2></div>
             <div class='float-right' id="triangle-down" style='top:0; position: absolute; z-index:-1'>
