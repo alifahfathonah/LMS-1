@@ -304,6 +304,7 @@ width:40px; height:40px; margin:0px 0px 5px 80px;}
             <h2 class="hd1 " >Lesson <?php echo $lesson?></h2>
             <h2 class="h2 " style="margin-top: -50px;"><?php echo $title?></h2> <br>
             <div id="triangle-side" style="margin-top: -30px;z-index: 1;"> </div>
+              <a href="../index.php" class="btn btn-info d-block" style="position:absolute; margin-top:2rem;margin-left:300px">&lt; Back to Dashboard</a>
             <!-- Sidebar -->
         <div id="mySidebar" class="sidebar overflow-auto">
             <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">× </a>
