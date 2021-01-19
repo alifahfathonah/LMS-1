@@ -64,7 +64,7 @@ if($_GET['lesson']){
 if(isset($_POST['submit'])){
        if($lesson==1.1){
       echo $s1=$_POST['s1']; echo $s2=$_POST['s2']; $s3=$_POST['s3']; $s4=$_POST['s4'];
-        $insert = mysqli_query($conn,"INSERT INTO `lesson1_1`(`s1`, `s2`,`s3`,`s4`,`sid`)
+       echo $insert = mysqli_query($conn,"INSERT INTO `lesson1_1`(`s1`, `s2`,`s3`,`s4`,`sid`)
         VALUES('$s1','$s2','$s3','$s4','$sid')");
         if($insert){
                echo" <script> alert('Successfully Submited');</script>";
