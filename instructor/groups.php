@@ -10,7 +10,7 @@ if(!$output2)
     echo "<script> alert('Error! You need to login first)');window.location.href='login.php' </script>";
 }
 
-$data = mysqli_query($conn, "SELECT * FROM groupss  where iid='$iid'");
+$data = mysqli_query($conn, "SELECT * FROM groupss WHERE iid='$iid'");
 $output = mysqli_fetch_all($data,MYSQLI_ASSOC);
 $data3 = mysqli_query($conn, "SELECT * FROM assign_students WHERE iid='$iid'");
 $output3 = mysqli_fetch_all($data3,MYSQLI_ASSOC);
@@ -19,7 +19,7 @@ if(isset($_POST['add']))
   {  
      $name =  $_POST['name'];
     $status= $_POST['status'];
-    $insert = mysqli_query($conn,"INSERT INTO `groupss`(`name`, `iid`,`status`)
+    $insert = mysqli_query($conn,"INSERT INTO `groups`(`name`, `iid`,`status`)
     VALUES('$name','$iid','$status')");
      if($insert){
         echo "<script> alert('Group is Added Successfully!');window.location.href='groups.php' </script>";
@@ -49,7 +49,7 @@ if(isset($_POST['assign']))
   if(isset($_POST['del']))
  {
     $id = $_POST['id'];
-    $sql = "DELETE FROM groupss WHERE id='$id'";
+    $sql = "DELETE FROM groups WHERE id='$id'";
     $del=mysqli_query($conn, $sql);
         if($del){
             echo "<script> alert('Group is Deleted Successfully!');window.location.href='groups.php' </script>";
@@ -60,7 +60,7 @@ if(isset($_POST['assign']))
  { $id =  $_POST['id'];
     $name =  $_POST['name'];
     $status= $_POST['status'];
-    $sql = "UPDATE `groupss` SET `name`='$name',`status`='$status'   WHERE id='$id'";
+    $sql = "UPDATE `groups` SET `name`='$name',`status`='$status'   WHERE id='$id'";
     $del=mysqli_query($conn, $sql);
         if($del){
             echo "<script> alert('Group Details is Updated Successfully!');window.location.href='groups.php' </script>";
@@ -90,7 +90,7 @@ if(isset($_POST['assign']))
 <p class="mb-4">Here is All the Group that have purchased lisence You can  Assign groups to<a 
         href="Groups.php"> Groups</a>. Or assign a groups to <a   href="Groups.php">Student </a></p>
         
-<button class='btn btn-success mr-2'  data-toggle="modal" data-target="#AddempModal">Add New Group</button> <br><br>
+<button class='btn btn-success mr-2'  data-toggle="modal" data-target="#AddempModal">Add New Group</button> ><br><br>
 <!-- DataTales Example -->
 <div class="card shadow mb-4">
     <div class="card-header py-3">

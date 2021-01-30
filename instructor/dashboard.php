@@ -1,6 +1,7 @@
 <?php session_start();
 include "../db.php";
 include "layout/header.php";
+
 $email=$_SESSION['email'];
 if($_SESSION['email']==true){
 $result = mysqli_query($conn,"SELECT * FROM instructor WHERE email = '$email'");
@@ -26,6 +27,7 @@ else{
     <!-- Page Wrapper -->
     <div id="wrapper">
     <?php include "layout/sidebar.php";?>
+
      
 
         <!-- Content Wrapper -->
