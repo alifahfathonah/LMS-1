@@ -63,14 +63,12 @@ if($_GET['lesson']){
 }
 if(isset($_POST['submit'])){
        if($lesson==1.1){
-      echo $s1=$_POST['s1']; echo $s2=$_POST['s2']; $s3=$_POST['s3']; $s4=$_POST['s4'];
-        $sql ="INSERT INTO `lesson1_1`(`s1`, `s2`,`s3`,`s4`,`sid`)
-        VALUES('$s1','$s2','$s3','$s4','$sid')";
-           $insert = mysqli_query($conn,$sql);  
+       $s1=$_POST['s1']; $s2=$_POST['s2']; $s3=$_POST['s3']; $s4=$_POST['s4'];
+        $insert = mysqli_query($conn,"INSERT INTO `lesson1_1`(`s1`, `s2`,`s3`,`s4`,`sid`)
+        VALUES('$s1','$s2','$s3','$s4','$sid')");
         if($insert){
                echo" <script> alert('Successfully Submited');</script>";
-        }
-       }
+        }}
         elseif($lesson==1.2){ $rwordarr=$_POST['r1'];  $ewordarr=$_POST['r2']; $awordarr=$_POST['r3']; $lwordarr=$_POST['r4'];
               $rword = implode(" , ",$rwordarr);  $eword = implode(" , ",$ewordarr); $aword = implode(" , ",$awordarr);$lword = implode(" , ",$lwordarr);
               $q1=$_POST['q1'];  $q2=$_POST['q2'];  $q3=$_POST['q3'];  $q4=$_POST['q4'];$q5=$_POST['q5'];
@@ -297,7 +295,6 @@ width:40px; height:40px; margin:0px 0px 5px 80px;}
     <div class="container  bg-white " >
         <!-- WorkBook Section -->
         <section>
-              <a href="student/dashboard.php" class="btn btn-info d-block" style="position:fixed; margin-top:2rem; margin-bottom:-4rem; margin-left:-12rem">&lt; Back to Dashboard</a>
           <div class="header" style="position: fixed;">
             <!-- <div id="triangle-up"> <h2 style="margin-left:-60rem" class="text-white hd1 pt-2">Lesson 1.1</h2></div>
             <div class='float-right' id="triangle-down" style='top:0; position: absolute; z-index:-1'>
@@ -306,7 +303,6 @@ width:40px; height:40px; margin:0px 0px 5px 80px;}
             <h2 class="hd1 " >Lesson <?php echo $lesson?></h2>
             <h2 class="h2 " style="margin-top: -50px;"><?php echo $title?></h2> <br>
             <div id="triangle-side" style="margin-top: -30px;z-index: 1;"> </div>
-            
             <!-- Sidebar -->
         <div id="mySidebar" class="sidebar overflow-auto">
             <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">× </a>
@@ -359,11 +355,21 @@ width:40px; height:40px; margin:0px 0px 5px 80px;}
        <?php include "workbook_lesson$includeless.php"; ?>
        <div class="footer">
               <div class="footer-icons">
-              <a href="workbook_template.php?lesson=<?php echo $nlesson?>">  <i class="fas fa-greater-than footericon"></i></a>
+              <?php if($lesson!="10.3"){?>
+			  <a href="workbook_template.php?lesson=<?php echo $nlesson?>">  
+			  <i class="fas fa-greater-than footericon"></i>
+			  </a>
+			  <?php } ?>
               <button type="submit"name='submit' class="footericon" style="background:transparent; padding:0px;border:none; margin-top:0px !important"> <i class="fas fa-save footericon"></i>  </button>
               <a href="" onclick="submit()" >  </a>
-              <a href="workbook_template.php?lesson=<?php echo $plesson?>">   <i class="fas fa-less-than footericon"></i></a>
-              </div>
+              
+			  <?php if($lesson!="1.1"){?>
+			  <a href="workbook_template.php?lesson=<?php echo $plesson?>">   
+			  <i class="fas fa-less-than footericon"></i>
+			  </a>
+			  <?php } ?>
+              
+			  </div>
                 <img src="img/footer.png" style='position: absolute; z-index:-1'  alt="">
           </div>
           </form>

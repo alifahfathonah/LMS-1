@@ -20,14 +20,15 @@
               <input type="text" class='txtarea namin' size='20' style="margin-left:-59rem;margin-top:0.7rem;"> -->
               <div class="qs px-5 ml-4">
                  <br> <br> <br>
-                <img src="img/q1.png" class='float-left p-2'alt=""> <span > <b>	If you had a problem with not finishing your homework and being behind in class, who on your Eco-Map could you go to for help?</b> </span> <input type="text" name="iq1[]" class='txtarea p-1' size="27" id=""><br>
-                <span class='ml-5' > <b>Why did you choose this person?</b> </span> <br> <textarea name="iq1[]" class='txtarea ml-5' id="" cols="110" rows=3></textarea><br> <br><br>
-                <img src="img/q2.png" class='float-left p-2'alt=""> <span > <b>	If your best friend started talking about wanting to try drugs, who on your Eco-Map could you talk to about it?</b> </span> <input type="text" name="iq2[]" class='txtarea p-1' size="47" id=""><br>
-                <span class='ml-5' > <b>Why did you choose this person?</b> </span> <br> <textarea name="iq2[]" class='txtarea ml-5' id="" cols="110" rows=3></textarea> <br> <br><br>
-                <img src="img/q3.png" class='float-left p-2'alt=""> <span style="font-size:26px"> <b>	If you were having a problem getting along with your parents, who on your Eco-Map could you go to for advice?</b> </span> <input type="text" name="iq3[]" class='txtarea p-1' size="47" id=""><br>
-                <span class='ml-5' > <b>Why did you choose this person?</b> </span> <br> <textarea name="iq3[]" class='txtarea ml-5' id="" cols="110" rows=3></textarea>  <br> <br><br>
-                <img src="img/q4.png" class='float-left p-2'alt=""> <span > <b>	If you had a situation with a boyfriend or girlfriend who was pressuring you to do something that you did not want to do, who on your Eco-Map could you talk to about it?</b> </span> <input type="text" name="iq4[]" class='txtarea p-1' size="87" id=""><br>
-                <span class='ml-5' > <b>Why did you choose this person?</b> </span> <br> <textarea name="iq4[]" class='txtarea ml-5' id="" cols="110" rows=3></textarea>  <br> <br><br>
+                <img src="img/q1.png" class='float-left p-2'alt=""> <span > <b>	If you had a problem with not finishing your homework and being behind in class, who on your Eco-Map could you go to for help?</b> </span> 
+				&nbsp;&nbsp;&nbsp;<input style="margin-left:50px;" type="text" name="iq1[]" class='txtarea p-1' size="40" id=""><br>
+                <span class='ml-1' style="padding-left:45px;" > <b>Why did you choose this person?</b> </span> <br> <textarea name="iq1[]" class='txtarea ml-5' id="" cols="90" rows=3></textarea><br> <br><br>
+                <img src="img/q2.png" class='float-left p-2'alt=""> <span > <b>	If your best friend started talking about wanting to try drugs, who on your Eco-Map could you talk to about it?</b> </span> <input style="margin-left:50px;" type="text" name="iq2[]" class='txtarea p-1' size="55" id=""><br>
+                <span class='ml-5' > <b>Why did you choose this person?</b> </span> <br> <textarea name="iq2[]" class='txtarea ml-5' id="" cols="80" rows=3></textarea> <br> <br><br>
+                <img src="img/q3.png" class='float-left p-2'alt=""> <span style="font-size:26px"> <b>	If you were having a problem getting along with your parents, who on your Eco-Map could you go to for advice?</b> </span> <input style="margin-left:50px;" type="text" name="iq3[]" class='txtarea p-1' size="47" id=""><br>
+                <span class='ml-5' > <b>Why did you choose this person?</b> </span> <br> <textarea name="iq3[]" class='txtarea ml-5' id="" cols="80" rows=3></textarea>  <br> <br><br>
+                <img src="img/q4.png" class='float-left p-2'alt=""> <span > <b>	If you had a situation with a boyfriend or girlfriend who was pressuring you to do something that you did not want to do, who on your Eco-Map could you talk to about it?</b> </span> <input style="margin-left:50px;" type="text" name="iq4[]" class='txtarea p-1' size="87" id=""><br>
+                <span class='ml-5' > <b>Why did you choose this person?</b> </span> <br> <textarea name="iq4[]" class='txtarea ml-5' id="" cols="80" rows=3></textarea>  <br> <br><br>
            
                 </div>
               </div>
@@ -43,11 +44,11 @@
                 <img src="img/real.png" class="pl-5 py-4 qs-img float-left mr-5" alt=""> <br> 
                 <div class="qs px-5 ml-5">
                 <h5> <b>What does the letter stands for?	 </b></h5>
-                <textarea  class='txtarea' id="" name="sq1[]" cols="100" rows="1"></textarea> <br>
+                <textarea  class='txtarea' id="" name="sq1[]" cols="80" rows="1"></textarea> <br>
                 <h5> <b>	Give an example of this strategy.	 </b></h5>
-                <textarea  class='txtarea' id="" name="sq1[]" cols="100" rows="1"></textarea> <br>
-                <h5 class='ml-5'> <b>	When can you use this strategy?	 </b></h5>
-                <textarea  class='txtarea'name="sq1[]" style='margin-left:7rem' id="" cols="100" rows="1"></textarea> <br>
+                <textarea  class='txtarea' id="" name="sq1[]" cols="80" rows="1"></textarea> <br>
+                <h5 class='ml-5' style="padding-left:60px;"> <b>	When can you use this strategy?	 </b></h5>
+                <textarea  class='txtarea'name="sq1[]" style='margin-left:7rem' id="" cols="80" rows="1"></textarea> <br>
                <br>
               </div>
               </div>
@@ -56,11 +57,11 @@
               <img src="img/eword.png" class="pl-5 py-4 qs-img float-left mr-5  pt-5" alt=""> <br> 
                 <div class="qs px-5 ml-5">
                 <h5> <b>What does the letter stands for?	 </b></h5>
-                <textarea  class='txtarea' name="sq2[]" id="" cols="100" rows="1"></textarea> <br>
+                <textarea  class='txtarea' name="sq2[]" id="" cols="80" rows="1"></textarea> <br>
                 <h5> <b>	Give an example of this strategy.	 </b></h5>
-                <textarea  class='txtarea' name="sq2[]" id="" cols="100" rows="1"></textarea> <br>
+                <textarea  class='txtarea' name="sq2[]" id="" cols="80" rows="1"></textarea> <br>
                 <h5 class='ml-5'> <b>	When can you use this strategy?	 </b></h5>
-                <textarea  class='txtarea' name="sq2[]" style='margin-left:7rem' id="" cols="100" rows="1"></textarea> <br>
+                <textarea  class='txtarea' name="sq2[]" style='margin-left:7rem' id="" cols="80" rows="1"></textarea> <br>
                <br>
               </div>
               </div>
@@ -68,11 +69,11 @@
               <img src="img/avoid.png" class="pl-5 py-4 qs-img float-left mr-5  pt-5" alt=""> <br> 
                 <div class="qs px-5 ml-5">
                 <h5> <b>What does the letter stands for?	 </b></h5>
-                <textarea  class='txtarea'name="sq3[]" id="" cols="100" rows="1"></textarea> <br>
+                <textarea  class='txtarea'name="sq3[]" id="" cols="80" rows="1"></textarea> <br>
                 <h5> <b>	Give an example of this strategy.	 </b></h5>
-                <textarea  class='txtarea'name="sq3[]" id="" cols="100" rows="1"></textarea> <br>
+                <textarea  class='txtarea'name="sq3[]" id="" cols="80" rows="1"></textarea> <br>
                 <h5 class='ml-5'> <b>	When can you use this strategy?	 </b></h5>
-                <textarea  class='txtarea'name="sq3[]" style='margin-left:7rem' id="" cols="100" rows="1"></textarea> <br>
+                <textarea  class='txtarea'name="sq3[]" style='margin-left:7rem' id="" cols="80" rows="1"></textarea> <br>
                <br>
               </div>
               </div>
@@ -80,11 +81,11 @@
               <img src="img/leave.png" class="pl-5 py-4 qs-img float-left mr-5 pt-5" alt=""> <br> 
                 <div class="qs px-5 ml-5">
                 <h5> <b>What does the letter stands for?	 </b></h5>
-                <textarea  class='txtarea'name="sq4[]" id="" cols="100" rows="1"></textarea> <br>
+                <textarea  class='txtarea'name="sq4[]" id="" cols="80" rows="1"></textarea> <br>
                 <h5> <b>	Give an example of this strategy.	 </b></h5>
-                <textarea  class='txtarea' name="sq4[]" id="" cols="100" rows="1"></textarea> <br>
+                <textarea  class='txtarea' name="sq4[]" id="" cols="80" rows="1"></textarea> <br>
                 <h5 class='ml-5 '> <b>	When can you use this strategy?	 </b></h5>
-                <textarea  class='txtarea' name="sq4[]" style='margin-left:7rem' id="" cols="100" rows="1"></textarea> <br>
+                <textarea  class='txtarea' name="sq4[]" style='margin-left:7rem' id="" cols="80" rows="1"></textarea> <br>
                <br>
               </div>
               </div>
@@ -92,7 +93,7 @@
                 <div class="qs px-5 ml-4">
                 <h5> <b>If you are in a situation where someone offers you alcohol, tobacco or drugs,
                  which strategy (or combination of strategies) will you be most likely to use? Why?  </b></h5>
-                 <textarea  class='txtarea' name="sq5" id="" cols="110" rows="4"></textarea> <br>
+                 <textarea  class='txtarea' name="sq5" id="" cols="80" rows="4"></textarea> <br>
                <br>
               </div>
               </div>

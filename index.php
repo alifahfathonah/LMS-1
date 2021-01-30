@@ -19,8 +19,8 @@ footer {
   </style>
 <body class=''>
   <div class="bgimg">
-    <nav class="navbar navbar-expand-lg navbar-dark " style="background-color:#252E3A;">
-  <a class="navbar-brand ml-5 p-1" href="#"> <img src="img/logo.png" alt="" style=" width:200px"> </a>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+  <a class="navbar-brand ml-5 p-1" href="#"> <img src="img/KIRLogo.png" alt=""> </a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
@@ -28,7 +28,7 @@ footer {
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
     <ul class="navbar-nav mr-auto">
       <li class="nav-item">
-        <a class="nav-link ml-5" href="stripe_payment_getway_php/index.php?valid=30">Workbooks</a>
+        <a class="nav-link ml-5" href="stripe_payment_gateway_php/index.php">Workbooks</a>
       </li>
       <li class="nav-item">
         <a class="nav-link  ml-3" href="#">About Us</a>
