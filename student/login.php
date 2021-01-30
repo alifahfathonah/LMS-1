@@ -24,7 +24,6 @@ if(isset($_POST['submit']))
     }
 }
 ?>
-?>
 <body class="bg-gradient-primary">
     <div class="bg-color">
     <div class="container">
