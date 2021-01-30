@@ -60,13 +60,13 @@ if(strcmp($role, "super admin")!== 0)
     <div class="container-fluid">
 
 <!-- Page Heading -->
-<h1 class="h3 mb-2 text-gray-800">Manage lisences</h1>
-<p class="mb-4">Here is All the lisences that are assigned by the admin to instructor or students. You can  Assign Lisence to<a 
-        href="students.php"> Students</a>. Or assign a lisence to <a   href="students.php">instructor </a></p>
+<h1 class="h3 mb-2 text-gray-800">Manage Licenses</h1>
+<p class="mb-4">Here is All the lisences that are assigned by the admin to instructor or students. You can  Assign License to<a 
+        href="students.php"> Students</a>. Or assign a License to <a   href="students.php">instructor </a></p>
 <!-- DataTales Example -->
 <div class="card shadow mb-4">
     <div class="card-header py-3">
-        <h6 class="m-0 font-weight-bold text-primary">Manage lisences</h6>
+        <h6 class="m-0 font-weight-bold text-primary">Manage Licenses</h6>
     </div>
     <div class="card-body">
         <div class="table-responsive">
@@ -75,7 +75,7 @@ if(strcmp($role, "super admin")!== 0)
                     <tr class='bg-light '>
                         <th> User Name</th>
                         <th>User Type</th>
-                        <th>Lisence Key</th>
+                        <th>License Key</th>
                         <th>Expiry Date</th>
                         <th>Status</th>
                         <th>Action</th>
@@ -119,8 +119,8 @@ if(strcmp($role, "super admin")!== 0)
                 </div>
                 <div class="modal-body text-center ">
                 <i class="fas fa-exclamation-triangle btn-warning btn-lg  btn-circle"></i> <br>
-                    After Click on delete you cannot retrive back this lisence.
-                    Also relevent information lisence from system will remove 
+                    After Click on delete you cannot retrive back this License.
+                    Also relevent information license from system will remove 
                 </div>
                 <div class="modal-footer">
                     <form action="" method="post">
@@ -143,13 +143,13 @@ if(strcmp($role, "super admin")!== 0)
 </div>
 <!-- /.container-fluid end-->
 
-     <!-- Update lisence  Modal-->
+     <!-- Update Licenses  Modal-->
  <div class="modal fade" id="editModal" tabindex="-1" address="dialog" aria-labelledby="exampleModalLabel"
         aria-hidden="true">
         <div class="modal-dialog" address="document">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-purpose" id="exampleModalLabel">Update lisence Details</h5>
+                    <h5 class="modal-purpose" id="exampleModalLabel">Update Licens Details</h5>
                     <button class="close" type="button" data-dismiss="modal" aria-label="Close">
                         <span aria-hidden="true">×</span>
                     </button>
@@ -170,7 +170,7 @@ if(strcmp($role, "super admin")!== 0)
                             </select>  <br>
                         <div class="row">
                             <div class="col-md-6">
-                             <label for="">Lisence Key</label>
+                             <label for="">License Key</label>
                             <input type="text" class=' form-control ' name="lkey" id="lkey" readonly> <br>
                             <button class="btn btn-info" type="button" onclick="makekey()">Generate New Key</button>
                             </div>
@@ -197,7 +197,6 @@ if(strcmp($role, "super admin")!== 0)
 
 </div>
 <script>
-   
 function makekey() {
   var text = "";
   var possible = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
@@ -220,10 +219,8 @@ function GetEModal(id,lkey,exp_date,status,sid,iid) {
     }
     else{
         document.getElementById("sid").classList.add("d-none")
-     document.getElementById("iid").value =iid;
+        document.getElementById("iid").value =iid;
     }
 }
-
 </script>
-
 </div>

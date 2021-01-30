@@ -1,12 +1,8 @@
    <!-- Sidebar -->
-   <ul class="navbar-nav  sidebar sidebar-dark accordion" style="background-color:#252E3A" id="accordionSidebar">
+   <ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion" id="accordionSidebar">
 
 <!-- Sidebar - Brand -->
-<a class="sidebar-brand d-flex align-items-center justify-content-center" href="dashboard.php">
-    <div class="sidebar-brand-icon ">
-      <img src="../img/logo.png" style="width:150px" alt="">
-    </div>
-</a>
+<a class=" bg-white p-1 mt-0 m-4 " href="#"> <img class='w-75' src="../img/logo.jpeg" alt=""> </a>
 
 <!-- Divider -->
 <hr class="sidebar-divider my-0">
@@ -36,7 +32,7 @@
     <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionSidebar">
         <div class="bg-white py-2 collapse-inner rounded">
             <h6 class="collapse-header">Manage Admnins:</h6>
-            <a class="collapse-item" href="admins.php">Manage Admnins</a>
+            <a class="collapse-item" href="admins.php">Manage Admin</a>
         </div>
     </div>
 </li>
@@ -50,7 +46,7 @@
     <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
         <div class="bg-white py-2 collapse-inner rounded">
             <h6 class="collapse-header">Manage Instructors:</h6>
-            <a class="collapse-item" href="instructors.php"> Manage instructors</a>
+            <a class="collapse-item" href="instructors.php"> Manage Instructors</a>
             <a class="collapse-item" href="assign_students.php"> Assign Students</a>
         </div>
     </div>
@@ -109,7 +105,7 @@
 <li class="nav-item">
     <a class="nav-link" style="cursor:pointer" href='lisences.php'>
         <i class="fas fa-fw fa-id-card"></i>
-        <span>Lisences</span></a>
+        <span>Licenses</span></a>
      
 </li>
 <!-- Nav Item - Stocks -->

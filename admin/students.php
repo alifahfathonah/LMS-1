@@ -15,7 +15,7 @@ if(strcmp($role, "super admin")!== 0)
 //Add new student Form Submit
 if(isset($_POST['add']))
   {  
-     $name =  $_POST['name'];
+    $name =  $_POST['name'];
     $email =  $_POST['email'];
     $password = $_POST['password'];
     $address= $_POST['address'];
@@ -52,7 +52,7 @@ if(isset($_POST['add']))
             echo "<script> alert('student Details is Updated Successfully!');window.location.href='students.php' </script>";
         }
  }
- //Assign LISENCE to Student
+ //Assign LICENSE to Student
 if(isset($_POST['assign']))
 {  
    $sid =  $_POST['sid'];
@@ -61,7 +61,7 @@ if(isset($_POST['assign']))
   $insert1 = mysqli_query($conn,"INSERT INTO `lisence`(`lkey`, `sid`,`exp_date`)
   VALUES('$lkey','$sid','$date')");
    if($insert1){
-      echo "<script> alert('Lisence is Assigned Successfully!');window.location.href='students.php' </script>";
+      echo "<script> alert('License is Assigned Successfully!');window.location.href='students.php' </script>";
   }
 }
  //View Assigned Instructor
@@ -93,11 +93,8 @@ if(isset($_POST['assign']))
 
 <!-- Page Heading -->
 <h1 class="h3 mb-2 text-gray-800">Manage students</h1>
-<p class="mb-4">DataTables is a third party plugin that is used to generate the demo table below.
-    For more information about DataTables, please visit the <a target="_blank"
-        href="https://datatables.net">official DataTables documentation</a>.</p>
-<button class='btn btn-success mr-2'  data-toggle="modal" data-target="#AddempModal">Add New student</button> 
-<button class='btn btn-primary mr-2'  data-toggle="modal" data-target="#assignModal">Assign lisence</button><br><br>
+<button class='btn btn-success mr-2'  data-toggle="modal" data-target="#AddempModal">Add New Student</button> 
+<button class='btn btn-primary mr-2'  data-toggle="modal" data-target="#assignModal">Assign License</button><br><br>
 <!-- DataTales Example -->
 <div class="card shadow mb-4">
     <div class="card-header py-3">
@@ -211,13 +208,13 @@ if(isset($_POST['assign']))
             </div>
         </div>
     </div>
-     <!-- Assign Lisence  Modal-->
+     <!-- Assign License  Modal-->
  <div class="modal fade" id="assignModal" tabindex="-1" address="dialog" aria-labelledby="exampleModalLabel"
         aria-hidden="true">
         <div class="modal-dialog" address="document">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-purpose" id="exampleModalLabel">Assign Lisence to Student</h5>
+                    <h5 class="modal-purpose" id="exampleModalLabel">Assign License to Student</h5>
                     <button class="close" type="button" data-dismiss="modal" aria-label="Close">
                         <span aria-hidden="true">×</span>
                     </button>
@@ -233,7 +230,7 @@ if(isset($_POST['assign']))
                         <button class="btn btn-info" type="button" onclick="makekey()">Generate Key</button> <br>
                         <div class="row">
                             <div class="col-md-6">
-                             <label for="">Lisence Key</label>
+                             <label for="">License Key</label>
                             <input type="text" class=' form-control ' name="lkey" id="lkey" readonly>
                             </div>
                             <div class="col-md-6">
@@ -244,7 +241,7 @@ if(isset($_POST['assign']))
                 </div>
                 <div class="modal-footer">
                     <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
-                    <input type="submit" name="assign" class="btn btn-success" value="Assign lisence">
+                    <input type="submit" name="assign" class="btn btn-success" value="Assign License">
                     </form>
                     </div>
             </div>
